@@ -9,18 +9,17 @@ object Presentation {
   lazy val html =
     myslides(
       Frontpage.content,
-      Chap1AboutMe.content,
-      Chap2Overview.content,
-      Chap3JavaScript.content,
-      Chap4Choice.content,
-      Chap5Scala.content,
-      Chap6Scalajs.content,
-      Chap7GettingStarted.content,
-      Chap8Libraries.content,
-      Chap9Tooling.content,
-      Chap10LiveCode.content,
-      Chap11Future.content,
-      Chap12Questions.content,
-      Chap13Resources.content
+      Chap1Overview.content,
+      Chap2History.content,
+      Chap3HelloWorld.content,
+      Chap4Variables.content,
+      Chap4_1Arrays.content,
+      Chap4_2ControlFlow.content,
+      Chap5Classes.content,
+      Chap6Methoden.content,
+      Chap7Constructor.content,
+      Chap8OO.content,
+      Chap8_1UML.content,
+      Chap9VariableReferences.content
     )
 }
