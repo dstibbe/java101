@@ -1,4 +1,4 @@
-package nl.quintor.presentation2
+package nl.quintor.presentation
 
 import nl.quintor.presentation.slides._
 import nl.quintor.reveal

@@ -1,4 +1,4 @@
-package nl.quintor.presentation2
+package nl.quintor.presentation
 
 import scalatags.Text.TypedTag
 

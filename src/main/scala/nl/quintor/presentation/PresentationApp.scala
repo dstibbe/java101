@@ -1,4 +1,4 @@
-package nl.quintor.presentation2
+package nl.quintor.presentation
 
 import org.scalajs.dom
 import org.scalajs.dom.raw.Element
