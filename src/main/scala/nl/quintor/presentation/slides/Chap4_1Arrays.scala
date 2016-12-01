@@ -95,7 +95,14 @@ object Chap4_1Arrays extends Section {
 
       ),
       subsection("")(
-        p("Druk input argumenten af. ")
+        p("Input argumenten worden meegegeven aan 'main' methode als: "),
+        prettyCode(java,
+          """
+            |String[] args
+          """.
+            stripMargin
+        ),
+        p("Druk 1e input argument af. ")
       )
     )
 }
