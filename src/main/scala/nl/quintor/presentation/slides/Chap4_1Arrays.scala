@@ -9,9 +9,12 @@ object Chap4_1Arrays extends Section {
   override def content =
     section("Arrays")(
       subsection("")(
+        p("Een array is een container object dat een vast aantal waarden van eenzelfde type bevat."),
         p(
           revealImg("objects-tenElementArray.gif")
-        ),
+        )
+      ),
+      subsection("")(
         p("Variabele declaratie dmv '[]', bijvoorbeeld"),
         prettyCode(java,
           """
@@ -19,30 +22,44 @@ object Chap4_1Arrays extends Section {
           """.
             stripMargin
         ),
-        p("Twee manieren van initialisatie"),
+        p("Een variabele die een array bevat van integers (hele getallen)")
+      ),
+      subsection("")(
+        p("Initialisatie door geheugen toe te wijzen: "),
         prettyCode(java,
           """
             |mijnGetallen = new int[3]; //reserveer geheugen voor 3 elementen
           """.
             stripMargin
         ),
+        p("Resulteert in een array met plek voor 3 integers (hele getallen)")
+      ),
+      subsection("")(
+        p("Initialisatie tijdens declatie door direct de inhoud toe te kennen: "),
         prettyCode(java,
           """
-            |mijnGetallen = { 9, 8, 7}; //initialiseer array met 3 specifieke elementen
+            |int [] mijnGetallen = { 9, 8, 7}; //initialiseer array met 3 specifieke elementen
           """.
             stripMargin
-        )
+        ),
+        p("Resulteert in een array met plek voor 3 integers (hele getallen). De drie plekken " +
+          "zijn gevuld met de waarden 9, 8 en 7")
 
       ),
       subsection("")(
+        p("Waarde toekennen aan specifieke index"),
         p(
-          "De lengte van een array verkrijg je door het 'length' veld op te vragen."
+          revealImg("objects-tenElementArray.gif")
         ),
         prettyCode(java,
           """
-            |int aantalGetallen = mijnGetallen.length; // geeft 3
+            |mijnGetallen[1] = 12;
           """.
             stripMargin
+        ),
+        ul(
+          li("index: 1  (2e positie in de array)"),
+          li("waarde op deze plek: 12")
         )
       ),
       subsection("")(
@@ -56,16 +73,23 @@ object Chap4_1Arrays extends Section {
           """.
             stripMargin
         ),
-        p("Waarde toekennen aan specifieke index"),
+        ul(
+          li("index: 1  (2e positie in de array)"),
+          li("kent deze waarde toe aan 'getalOp2ePlek' variabele")
+        )
+      ),
+      subsection("")(
+        p(
+          "De lengte van een array verkrijg je door het 'length' veld op te vragen."
+        ),
         prettyCode(java,
           """
-            |mijnGetallen[1] = 12;
+            |mijnGetallen.length; // geeft 3
           """.
             stripMargin
         )
       ),
       subsection("")(
-
         p("Creeer array van 3 elementen en druk deze vervolgens af"),
         p("Wat gebeurt er als je een 'verkeerde' index gebruikt?")
 
