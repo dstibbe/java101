@@ -8,6 +8,7 @@ import scalatags.Text.all._
 object Chap7Constructor extends Section {
   override def content =
     section("Constructor")(
+      p( "Speciale methode voor het initializeren van een object."),
       subsection("")(
         prettyCode(java,
           """
