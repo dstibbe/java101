@@ -22,13 +22,13 @@ object Chap4_1Arrays extends Section {
           """.
             stripMargin
         ),
-        p("Een variabele die een array bevat van integers (hele getallen)")
+        p("Een variabele genaamd 'mijnGetallen' die een array bevat van integers (hele getallen)")
       ),
       subsection("")(
         p("Initialisatie door geheugen toe te wijzen: "),
         prettyCode(java,
           """
-            |mijnGetallen = new int[3]; //reserveer geheugen voor 3 elementen
+            |mijnGetallen = new int[3];
           """.
             stripMargin
         ),
@@ -38,7 +38,7 @@ object Chap4_1Arrays extends Section {
         p("Initialisatie tijdens declatie door direct de inhoud toe te kennen: "),
         prettyCode(java,
           """
-            |int [] mijnGetallen = { 9, 8, 7}; //initialiseer array met 3 specifieke elementen
+            |int [] mijnGetallen = { 9, 8, 7};
           """.
             stripMargin
         ),
@@ -84,7 +84,7 @@ object Chap4_1Arrays extends Section {
         ),
         prettyCode(java,
           """
-            |mijnGetallen.length; // geeft 3
+            |mijnGetallen.length;
           """.
             stripMargin
         )
