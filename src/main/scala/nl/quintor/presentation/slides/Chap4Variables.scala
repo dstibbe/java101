@@ -9,6 +9,7 @@ object Chap4Variables extends Section {
   override def content =
     section("Variabelen")(
       subsection("")(
+        p("Een variabele is dus een benoemde geheugenlocatie waar gegevens opgeslagen kunnen worden."),
         prettyCode(java,
           """
             |public class HelloWorld {
@@ -19,7 +20,8 @@ object Chap4Variables extends Section {
             |}
           """.
             stripMargin
-        )
+        ),
+        p("De variabele hier heet 'myMessage' en bevat een String.")
       ),
       subsection("")(
         p("variabele declaratie"),
@@ -36,19 +38,23 @@ object Chap4Variables extends Section {
         )
       ),
       subsection("")(
-        ul("Primitieven")(
-          li("char - 'a'"),
-          li("double - 123.0"),
-          li("float - 12.0"),
-          li("long - 1112"),
-          li("int - 112"),
-          li("short - 12"),
-          li("byte - 0b0010_0101")
-        ),
-        p(" "),
-        ul("Overig"){
-          li("String - \"Hello world\"")
-        }
+        p("Primitieven"),
+        table(
+          tr(td("char"), td("een karakter"), td("'a'")),
+          tr(td("float"), td("reeel (komma) getal"), td("12.0")),
+          tr(td("double"), td("grote float"), td("123.0")),
+          tr(td("int"), td("geheel getal"), td("112")),
+          tr(td("long"), td("grote int"), td("1112")),
+          tr(td("short"), td("kleine int"), td("12")),
+          tr(td("byte"), td("8 bits"), td("0b0010_0101")),
+          tr(td("boolean"), td("waar/vals"), td("true"))
+        )
+      ),
+      subsection("")(
+        p("Objecten"),
+        table(
+          tr(td("String"), td("tekst"), td(""))
+        )
       )
     )
 }
