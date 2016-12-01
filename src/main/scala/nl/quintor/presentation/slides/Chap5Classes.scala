@@ -56,10 +56,6 @@ object Chap5Classes extends Section {
         prettyCode(java,
           """
             |Klant jakie = new Klant();
-            |
-            |jakie.naam = "Jakie";
-            |jakie.adres = "Chocoladefabriek";
-            |jakie.plaats = "Munchen";
           """.stripMargin
         ),
         ul("variabele gedefinieerd: ")(
@@ -67,6 +63,31 @@ object Chap5Classes extends Section {
           li("naam = jakie"),
           li("WAARDE = een Klant object")
         )(fragment)
+      ),
+
+      subsection("")(
+        p("Benaderen van velden en methoden van een object dmv '.' operator:"),
+        prettyCode(java,
+          """
+            |jakie.naam = "Jakie"; // schrijven
+            |System.out.println(jakie.naam); //lezen
+          """.stripMargin
+        ),
+        ul(
+          li("Eerst wordt 'Jakie' naar het 'naam' veld geschreven."),
+          li("Vervolgens wordt 'naam' veld gelezen.")
+        )
+      ),
+      subsection("")(
+        prettyCode(java,
+          """
+            |Klant jakie = new Klant();
+            |
+            |jakie.naam = "Jakie";
+            |jakie.adres = "Chocoladefabriek";
+            |jakie.plaats = "Munchen";
+          """.stripMargin
+        )
       )
     )
 
