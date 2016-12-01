@@ -9,7 +9,64 @@ object Chap4Variables extends Section {
   override def content =
     section("Variabelen")(
       subsection("")(
-        p("Een variabele is dus een benoemde geheugenlocatie waar gegevens opgeslagen kunnen worden."),
+        p("Een variabele is een benoemde geheugenlocatie waar gegevens opgeslagen kunnen worden.")
+      ),
+      subsection("")(
+        ul(
+          li("declaratie - definieren van naam en gegevenstype"),
+          li("initialisatie - toekennen van de eerste waarde")
+        )
+      ),
+      subsection("")(
+        h4("declaratie"),
+        prettyCode(java,
+          """
+            |String myMesssage;
+          """.
+            stripMargin
+        ),
+        blockquote(
+          "TYPE NAAM"
+        ),
+        ul(
+          li("TYPE: String"),
+          li("NAAM: myMessage")
+        )
+      ),
+      subsection("")(
+        p("initialisatie:"),
+        prettyCode(java,
+          """
+            |myMesssage = "Hello World";
+          """.
+            stripMargin
+        ),
+        blockquote(
+          "NAAM = WAARDE"
+        ),
+        ul(
+          li("NAAM: myMessage"),
+          li("WAARDE: \"Hello World\"")
+        )
+      ),
+      subsection("")(
+        p("declaratie en initialisatie:"),
+        prettyCode(java,
+          """
+            |String myMesssage = "Hello World";
+          """.
+          stripMargin
+        ),
+        blockquote(
+          "TYPE NAAM = WAARDE"
+        ),
+        ul(
+          li("TYPE: String"),
+          li("NAAM: myMessage"),
+          li("WAARDE: \"Hello World\"")
+        )
+      ),
+      subsection("")(
         prettyCode(java,
           """
             |public class HelloWorld {
@@ -20,21 +77,6 @@ object Chap4Variables extends Section {
             |}
           """.
             stripMargin
-        ),
-        p("De variabele hier heet 'myMessage' en bevat een String.")
-      ),
-      subsection("")(
-        p("variabele declaratie"),
-        blockquote(
-          "TYPE NAAM = WAARDE"
-        ),
-        fragment(
-          ul(
-            li("TYPE = String class"),
-            li("NAAM = myMessage"),
-            li("WAARDE = \"Hello World\""),
-            li("variabele naame begint altijd met kleine letter")
-          )
         )
       ),
       subsection("")(
@@ -49,7 +91,8 @@ object Chap4Variables extends Section {
           tr(td("byte"), td("8 bits"), td("0b0010_0101")),
           tr(td("boolean"), td("waar/vals"), td("true"))
         )
-      ),
+      )
+      ,
       subsection("")(
         p("Objecten"),
         table(
