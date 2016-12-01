@@ -64,7 +64,6 @@ object Chap5Classes extends Section {
           li("WAARDE = een Klant object")
         )(fragment)
       ),
-
       subsection("")(
         p("Benaderen van velden en methoden van een object dmv '.' operator:"),
         prettyCode(java,

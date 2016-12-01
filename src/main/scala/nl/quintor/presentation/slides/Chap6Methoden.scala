@@ -92,15 +92,20 @@ object Chap6Methoden extends Section {
             |}
           """.stripMargin
         ),
+        ul(
+          li("'void' - betekent dar deze methode geen return waarde heeft"),
+          li("De methode verwacht 2 argumenten, van het type String"),
+          li("De argumenten worden toegekend aan twee velden van de Klant klasse")
+        )
+      ),
+      subsection("")(
         prettyCode(java,
           """
             |jakie.verhuistNaar("twixFactory", "Left town");
           """.stripMargin
         ),
         ul(
-          li("'void' - betekent dar deze methode geen return waarde heeft"),
-          li("De methode verwacht 2 argumenten, van het type String"),
-          li("De argumenten worden toegekend aan twee velden van de Klant klasse")
+          li("'roept de methode 'verhuistNaar' aan met twee strings")
         )
       )
     )
