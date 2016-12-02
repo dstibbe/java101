@@ -34,7 +34,7 @@ object Chap4_2ControlFlow extends Section {
         )(fragment)
       ),
       subsection("")(
-        ul("Equality and Relational Operators")(
+        ul("Gelijkheid en relationele Operators")(
           li("== gelijk aan"),
           li("!= ONgelijk aan"),
           li(">  groter dan"),
@@ -45,7 +45,7 @@ object Chap4_2ControlFlow extends Section {
       ),
       subsection("")(
         p(
-          ul("Arithmetic Operators")(
+          ul("Rekenkundige Operators")(
             li("* : vermenigvuldigen"),
             li("/ : delen"),
             li("- : aftrekken"),
@@ -100,7 +100,8 @@ object Chap4_2ControlFlow extends Section {
             | }
           """.
             stripMargin
-        )(fragment)
+          )(fragment),
+        p("Gelijk aan eerder genoemde 'while' loop")(fragment)
       ),
       subsection("")(
         p("for, kan ook over een array itereren"),

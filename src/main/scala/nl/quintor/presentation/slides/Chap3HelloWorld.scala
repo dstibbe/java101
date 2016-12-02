@@ -18,6 +18,7 @@ object Chap3HelloWorld extends Section {
         """.stripMargin
       ),
       ul(
+        li("Bestand genaamd 'HelloWorld.java'"),
         li("'main' method wordt aangeroepen bij starten van de applicatie"),
         li("Elke opdrachtregel eindigt met ';'"),
         li("Details komen later aan bod")

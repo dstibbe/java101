@@ -9,6 +9,7 @@ object Chap7Constructor extends Section {
   override def content =
     section("Constructor")(
       subsection("")(
+        p( "Speciale methode voor het initializeren van een object."),
         prettyCode(java,
           """
             |Klant jakie = new Klant();

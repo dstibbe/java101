@@ -22,17 +22,21 @@ object Chap6Methoden extends Section {
           """.stripMargin
         ),
         ul(
-          li("'public' = toegankelijk voor iederen\""),
+          li("public - toegankelijk voor iederen\""),
           li("String - methode geeft een String object terug"),
-          li("toString - methode naam")
+          li("'buildString' - methode naam")
         )
       ),
       subsection("")(
         prettyCode(java,
           """
-            |public String buildString(){
-            |   String bericht = naam + " woont op " + adres + " in " + plaats;
-            |   return bericht;
+            |public class Klant{
+            |  ...
+            |  public String buildString(){
+            |     String bericht = naam + " woont op " + adres + " in " + plaats;
+            |     return bericht;
+            |  }
+            |  ...
             |}
           """.stripMargin
         ),
@@ -40,6 +44,16 @@ object Chap6Methoden extends Section {
           li("'+' - operatie voor het samenvoegen van String objecten"),
           li("return - verlaat de methode en geef de waarde mee terug")
         )
+      ),
+      subsection("")(
+
+        p("Ook methoden van een object benadert men dmv '.' operator:"),
+        prettyCode(java,
+          """
+            |jakie.buildString();
+          """.stripMargin
+        ),
+        p("Dit roept de methode 'buildString()' aan van het object waar 'jakie' naar verwijst.")
       ),
       subsection("")(
         prettyCode(java,
@@ -51,6 +65,19 @@ object Chap6Methoden extends Section {
             |System.out.println( jakieTekst );
           """.stripMargin
         )
+      ),
+      subsection("")(
+        p("Methode kan meerdere argumenten ontvangen, deze worden tussen de " +
+          "'()' gespecificieerd. Bijvoorbeeld:"),
+        prettyCode(java,
+          """
+            |public String xyz(int arg1, String arg2){
+            |  ...
+            |}
+          """.stripMargin
+        ),
+        p("Deze methode ontvangt twee argumenten, een int en een String, met de namen" +
+          "'arg1' en 'arg2'.")
       ),
       subsection("")(
         prettyCode(java,
@@ -65,15 +92,20 @@ object Chap6Methoden extends Section {
             |}
           """.stripMargin
         ),
+        ul(
+          li("'void' - betekent dar deze methode geen return waarde heeft"),
+          li("De methode verwacht 2 argumenten, van het type String"),
+          li("De argumenten worden toegekend aan twee velden van de Klant klasse")
+        )
+      ),
+      subsection("")(
         prettyCode(java,
           """
             |jakie.verhuistNaar("twixFactory", "Left town");
           """.stripMargin
         ),
         ul(
-          li("'void' - betekent dar deze methode geen return waarde heeft"),
-          li("De methode verwacht 2 argumenten, van het type String"),
-          li("De argumenten worden toegekend aan twee velden van de Klant klasse")
+          li("'roept de methode 'verhuistNaar' aan met twee strings")
         )
       )
     )
