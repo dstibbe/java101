@@ -9,7 +9,8 @@ import scalatags.text.Builder
 package object reveal {
   def frontpage(name: String) = tag("section")(id := s"title-${name}")(presentationTitle(name))
   def section(name: String) = tag("section")(id := name)(heading(name))
-  def subsection(name: String) = tag("section")(id := name)(h3(name))
+  def subsection(name: String):TypedTag[String] = tag("section")(id := name)(h3(name))
+  def subsection():TypedTag[String] = subsection("")
 
   def section = tag("section")
 
