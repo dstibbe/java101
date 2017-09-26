@@ -9,10 +9,12 @@ object W2C1Overview extends Section {
   override def content =
     section("Week2 - Overview")(
       ul(
-        li("Herhaling"),
-        li("Praciticum"),
+        li("Review"),
+        li("Homework assignment"),
         li("Scope"),
-        li("String")
+        li("String"),
+        li("Maven"),
+        li("Unit testing")
       )
     )
 }

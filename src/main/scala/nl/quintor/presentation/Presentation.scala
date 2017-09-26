@@ -1,5 +1,6 @@
 package nl.quintor.presentation
 
+import nl.quintor.presentation.slides.week1._
 import nl.quintor.presentation.slides.{week2, _}
 import nl.quintor.presentation.slides.week2._
 import nl.quintor.reveal
@@ -20,8 +21,8 @@ object Presentation {
       Chap6Methoden.content,
       Chap7Constructor.content,
       Chap8OO.content,
-      Chap8_1UML.content,
       Chap9VariableReferences.content,
+      Chap8_1UML.content,
       W2Frontpage.content,
       W2C1Overview.content,
       W2C2Tekens.content,
@@ -34,6 +35,9 @@ object Presentation {
       W2C6ControlFlow.content,
       W2C7Scope.content,
       W2C8Assignment.content,
-      W2C9String.content
+      W2C9String.content,
+      W2C10Maven.content,
+      W2C11UnitTesting.content,
+      W2C12Cucumber.content
     )
 }

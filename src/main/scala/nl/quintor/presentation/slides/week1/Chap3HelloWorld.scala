@@ -1,4 +1,4 @@
-package nl.quintor.presentation.slides
+package nl.quintor.presentation.slides.week1
 
 import nl.quintor.presentation.Section
 import nl.quintor.reveal._
@@ -18,10 +18,10 @@ object Chap3HelloWorld extends Section {
         """.stripMargin
       ),
       ul(
-        li("Bestand genaamd 'HelloWorld.java'"),
-        li("'main' method wordt aangeroepen bij starten van de applicatie"),
-        li("Elke opdrachtregel eindigt met ';'"),
-        li("Details komen later aan bod")
+        li("File called 'HelloWorld.java'"),
+        li("'main' method called when starting the applicatie"),
+        li("Every command line ends with';'"),
+        li("Details later")
       )
     )
 }
