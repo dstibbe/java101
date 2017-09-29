@@ -7,7 +7,7 @@ import scalatags.Text.all._
 
 object W2Frontpage extends Section {
   override def content =
-    frontpage("Week2: Introductie tot Java")(
+    frontpage("Week2: Applying Java")(
       revealImg("duke.png")(attr("width") := "200"),
       p(
         small("Created by ",

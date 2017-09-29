@@ -1,4 +1,4 @@
-package nl.quintor.presentation.slides
+package nl.quintor.presentation.slides.week1
 
 import nl.quintor.presentation.Section
 import nl.quintor.reveal._

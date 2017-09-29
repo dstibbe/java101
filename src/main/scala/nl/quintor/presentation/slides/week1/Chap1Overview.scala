@@ -1,4 +1,4 @@
-package nl.quintor.presentation.slides
+package nl.quintor.presentation.slides.week1
 
 import nl.quintor.presentation.Section
 import nl.quintor.reveal._
@@ -11,8 +11,8 @@ object Chap1Overview extends Section {
       ul(
         li("Class"),
         li("Object"),
-        li("Attributen"),
-        li("Methodes")
+        li("Attributes"),
+        li("Methods")
       )
     )
 }
