@@ -1,11 +1,11 @@
-package nl.quintor.presentation.slides.week2
+package nl.quintor.presentation.slides.week3
 
 import nl.quintor.presentation.Section
 import nl.quintor.reveal.{subsection, _}
 
 import scalatags.Text.all.{p, _}
 
-object W2C10Maven extends Section {
+object W3C2Maven extends Section {
   override def content =
     section("Maven")(
       subsection()(
@@ -70,6 +70,17 @@ object W2C10Maven extends Section {
           li("install - install the package into the local repository, for use as a dependency in other projects locally"),
           li("result in target directory")
         )
+      ),
+      subsection("SSL")(
+        p("Rabobank injects its own root cert. Either ignore ssl or add the root cert to the java keystore"),
+        prettyCode(java,
+          """
+            | -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true
+          """.
+            stripMargin
+        ),
+        p("When adding to keystore, I'd suggest KeyStore Explorer (KSE)")
+
       ),
       subsection("Jar")(
         p("Jar file is a Java ARchive file. Little more than a zip file containing your compiled classes"),

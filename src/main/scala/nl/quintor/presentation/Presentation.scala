@@ -3,6 +3,7 @@ package nl.quintor.presentation
 import nl.quintor.presentation.slides.week1._
 import nl.quintor.presentation.slides.{week2, _}
 import nl.quintor.presentation.slides.week2._
+import nl.quintor.presentation.slides.week3._
 import nl.quintor.reveal
 
 
@@ -36,8 +37,11 @@ object Presentation {
       W2C7Scope.content,
       W2C8Assignment.content,
       W2C9String.content,
-      W2C10Maven.content,
-      W2C11UnitTesting.content,
-      W2C12Cucumber.content
+      W3Frontpage.content,
+      W3C1Overview.content,
+      W3C2Maven.content,
+      W3C3Git.content,
+      W3C4UnitTesting.content,
+      W3C5Cucumber.content
     )
 }

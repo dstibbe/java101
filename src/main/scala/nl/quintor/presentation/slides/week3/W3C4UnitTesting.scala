@@ -1,11 +1,11 @@
-package nl.quintor.presentation.slides.week2
+package nl.quintor.presentation.slides.week3
 
 import nl.quintor.presentation.Section
 import nl.quintor.reveal.{subsection, _}
 
 import scalatags.Text.all.{p, _}
 
-object W2C11UnitTesting extends Section {
+object W3C4UnitTesting extends Section {
   override def content =
     section("Unit Testing")(
       subsection()(
@@ -26,7 +26,7 @@ object W2C11UnitTesting extends Section {
           """.
             stripMargin
         ),
-        p("You can find dependency at ", a(href:="https://mvnrepository.com")("https://mvnrepository.com")),
+        p("You can find dependency at ", a(href := "https://mvnrepository.com")("https://mvnrepository.com")),
         p("Search for junit")
       ),
       subsection()(
@@ -56,34 +56,34 @@ object W2C11UnitTesting extends Section {
           """.
             stripMargin
         )
-    ),
-    subsection()(
+      ),
+      subsection()(
         ul(
           li("@Before - run before each test"),
           li("@After - run after each test"),
           li("@Test - the test, there can be mutliple")
         )
-    ),
-    subsection()(
-      p("assertion\nəˈsəːʃ(ə)n/Submit\nnoun"),
-      p("A confident and forceful statement of fact or belief."),
-      p("The essence of unit tests")(fragment)
-    ),
-    subsection()(
-      prettyCode(java,
-        """
-          |@Test
-          |public void myTestMethod(){
-          |   Assert.assertEquals("They shouldn't be equal", "Apples", "Oranges");
-          |}
-          |
-        """.
-          stripMargin
       ),
-      p("This test asserts that 'Apples' is equal to 'Oranges'"),
-      p("This is, of course, false")(fragment)
-    ),
-    subsection()(
+      subsection()(
+        p("assertion\nəˈsəːʃ(ə)n/Submit\nnoun"),
+        p("A confident and forceful statement of fact or belief."),
+        p("The essence of unit tests")(fragment)
+      ),
+      subsection()(
+        prettyCode(java,
+          """
+            |@Test
+            |public void myTestMethod(){
+            |   Assert.assertEquals("They shouldn't be equal", "Apples", "Oranges");
+            |}
+            |
+        """.
+            stripMargin
+        ),
+        p("This test asserts that 'Apples' is equal to 'Oranges'"),
+        p("This is, of course, false")(fragment)
+      ),
+      subsection()(
         p("Unit assertions usually have the following form:"),
         ul(
           li("assert{TYPE}(message,a[,b])"),
@@ -91,16 +91,28 @@ object W2C11UnitTesting extends Section {
           li("{TYPE} - type of assertion, eg 'Equals' or 'True'"),
           li("a[,b] - the one or two objects that we are asserting about")
         )
-    ),
-    subsection()(
+      ),
+      subsection()(
+        p("Create a simple unit test comparing Apples and Oranges")
+      ),
+      subsection()(
+        p("checkout the 'junit' branch"),
+        p("Create unit test for FizzBuzz"),
+        p("What is the main issue when testing the 'play' method? ")
+      ),
+      subsection()(
         p("Create unit tests for FizzBuzz"),
         ul(
           li("What is the main issue when testing the 'play' method? "),
-          li("Test happy path"),
+          li("Test happy path for Fizz and Buzz"),
           li("Test edge cases")
         )
+      ),
+      subsection()(
+        p("Extend FizzBuzz"),
+        p("Add 'gummybear' in FizzBuzz at mod 11 with corresponding test")
+      )
     )
-  )
 
 
 }
